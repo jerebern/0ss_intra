@@ -6,8 +6,15 @@
         xmlns:local="clr-namespace:Gestionaire_Clients"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel DockPanel.Dock="Top">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel DockPanel.Dock="Top">
             <Menu>
                 <MenuItem Header="_Fichier"/>
                 <MenuItem Header="_Edition"/>
@@ -16,4 +23,6 @@
         </StackPanel>
 
     </Grid>
+
+        </DockPanel>
 </Window>
