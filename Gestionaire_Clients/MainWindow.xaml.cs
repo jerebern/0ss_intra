@@ -24,7 +24,7 @@ namespace Gestionaire_Clients
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         List<Customer> customer = new List<Customer>();
-
+        Customer NouveauClient = new Customer();
 
 
         public MainWindow()
@@ -60,6 +60,16 @@ namespace Gestionaire_Clients
         
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            customer.Add(NouveauClient);
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
 
