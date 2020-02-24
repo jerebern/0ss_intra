@@ -29,7 +29,7 @@ namespace Gestionaire_Clients
         Customer NouveauClient = new Customer();
         private Customer ClientSelectioner = new Customer();
 
-
+        //J'ai inclus la classe Customer dans le meme projet j'avais des probleme
 
         public MainWindow()
         {
@@ -68,6 +68,8 @@ namespace Gestionaire_Clients
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             customer.Add(NouveauClient);
+
+            Console.WriteLine(NouveauClient.Name);
             MaxListeIndex++;
         }
 
@@ -93,7 +95,11 @@ namespace Gestionaire_Clients
 
             NouveauClient = customer[IndexScroll];
 
+         
+
         }
+
+
     }
 
 

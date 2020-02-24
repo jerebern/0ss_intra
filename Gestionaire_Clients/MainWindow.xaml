@@ -46,7 +46,7 @@
             <Label Content="Province :" HorizontalAlignment="Left" Margin="567,94,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Code Postal:" HorizontalAlignment="Left" Margin="301,121,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Contact :" HorizontalAlignment="Left" Margin="301,155,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,33,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Text="{Binding NouveauClient.Name}"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,33,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Text="{Binding NouveauClient.Name}" />
             <TextBox HorizontalAlignment="Left" Height="21" Margin="605,37,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Text="{Binding NouveauClient.LastName}" />
             <TextBox HorizontalAlignment="Left" Height="21" Margin="355,64,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="397" Text="{Binding NouveauClient.Address}"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="355,94,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Text="{Binding NouveauClient.City}"/>
