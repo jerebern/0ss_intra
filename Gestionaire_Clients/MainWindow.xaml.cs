@@ -23,6 +23,8 @@ namespace Gestionaire_Clients
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        private int IndexScroll = 0;
+        private int MaxListeIndex;
         List<Customer> customer = new List<Customer>();
         Customer NouveauClient = new Customer();
         private Customer ClientSelectioner = new Customer();
@@ -66,17 +68,29 @@ namespace Gestionaire_Clients
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             customer.Add(NouveauClient);
+            MaxListeIndex++;
         }
 
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            customer.RemoveAt(0);
+            customer.RemoveAt(IndexScroll);
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ClientSelectioner = NouveauClient;
+
+
+        }
+
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+           
+
+            int IndexScroll = (int)e.NewValue;
+
+            
         }
     }
 

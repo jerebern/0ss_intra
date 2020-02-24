@@ -38,7 +38,7 @@
                     </GridView>
                 </ListView.View>
             </ListView>
-            <ScrollBar HorizontalAlignment="Left" Margin="261,33,0,0" Grid.Row="1" VerticalAlignment="Top" Height="358"/>
+            <ScrollBar HorizontalAlignment="Left" Margin="261,33,0,0" Grid.Row="1" VerticalAlignment="Top" Height="358" Value="{Binding IndexScroll}" ValueChanged="ScrollBar_ValueChanged"/>
             <Label Content="Prénom:" HorizontalAlignment="Left" Margin="301,33,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Nom:" HorizontalAlignment="Left" Margin="556,33,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Adresse:" HorizontalAlignment="Left" Margin="301,59,0,0" Grid.Row="1" VerticalAlignment="Top"/>
