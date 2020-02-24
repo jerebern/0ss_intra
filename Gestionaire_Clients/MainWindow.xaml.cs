@@ -12,22 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel; //INotifyPropertyChange
+using System.Runtime.CompilerServices; //[CallerMemberName]
+
 
 namespace Gestionaire_Clients
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+       public List<Customer> clients { get; set; }
         public MainWindow()
         {
+
+            
+
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
+
+
 }
