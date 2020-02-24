@@ -15,14 +15,36 @@
             </Grid.RowDefinitions>
 
             <StackPanel DockPanel.Dock="Top">
-            <Menu>
-                <MenuItem Header="_Fichier"/>
-                <MenuItem Header="_Edition"/>
-                <MenuItem Header="_Affichage"/>
-            </Menu>
-        </StackPanel>
+                <Menu>
+                    <MenuItem Header="_Fichier"/>
+                    <MenuItem Header="_Edition"/>
+                    <MenuItem Header="_Affichage"/>
+                </Menu>
+            </StackPanel>
+            <Label Content="Liste des clients&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.167"/>
+            <Button Content="Nouveau client" HorizontalAlignment="Left" Margin="108,8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118"/>
+            <ListView HorizontalAlignment="Left" Height="358" Margin="10,33,0,0" Grid.Row="1" VerticalAlignment="Top" Width="251">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ScrollBar HorizontalAlignment="Left" Margin="261,33,0,0" Grid.Row="1" VerticalAlignment="Top" Height="358"/>
+            <Label Content="Prénom:" HorizontalAlignment="Left" Margin="301,33,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Nom:" HorizontalAlignment="Left" Margin="556,33,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Adresse:" HorizontalAlignment="Left" Margin="301,59,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Ville:" HorizontalAlignment="Left" Margin="301,90,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Province :" HorizontalAlignment="Left" Margin="567,94,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Code Postal:" HorizontalAlignment="Left" Margin="301,121,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="Contact :" HorizontalAlignment="Left" Margin="301,155,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,33,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="605,37,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="355,94,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="207"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="632,94,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
-    </Grid>
+        </Grid>
 
-        </DockPanel>
+    </DockPanel>
 </Window>
