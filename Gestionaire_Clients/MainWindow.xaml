@@ -38,11 +38,15 @@
             <Label Content="Province :" HorizontalAlignment="Left" Margin="567,94,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Code Postal:" HorizontalAlignment="Left" Margin="301,121,0,0" Grid.Row="1" VerticalAlignment="Top"/>
             <Label Content="Contact :" HorizontalAlignment="Left" Margin="301,155,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,33,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
-            <TextBox HorizontalAlignment="Left" Height="21" Margin="605,37,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
-            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="355,94,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="207"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="632,94,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,33,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="605,37,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="355,64,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="355,94,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="632,94,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="376,125,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="370,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" TextChanged="TextBox_TextChanged"/>
+            <Button Content="Supprimer ce client" HorizontalAlignment="Left" Margin="567,205,0,0" Grid.Row="1" VerticalAlignment="Top" Width="215"/>
+            <Image HorizontalAlignment="Left" Height="186" Margin="301,205,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222"/>
 
         </Grid>
 
