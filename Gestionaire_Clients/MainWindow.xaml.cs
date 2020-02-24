@@ -60,7 +60,7 @@ namespace Gestionaire_Clients
 
             InitializeComponent();
         }
-
+        
         
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -81,7 +81,7 @@ namespace Gestionaire_Clients
         {
             ClientSelectioner = NouveauClient;
 
-
+            MaxListeIndex++;
         }
 
         private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -89,8 +89,10 @@ namespace Gestionaire_Clients
            
 
             int IndexScroll = (int)e.NewValue;
+            ClientSelectioner = customer[IndexScroll];
 
-            
+            NouveauClient = customer[IndexScroll];
+
         }
     }
 
