@@ -24,7 +24,7 @@
             </StackPanel>
             <Label Content="Liste des clients&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.167"/>
             <Button Content="Nouveau client" HorizontalAlignment="Left" Margin="108,8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" Click="Button_Click"/>
-            <ListView HorizontalAlignment="Left" Height="358" Margin="10,33,0,0" Grid.Row="1" VerticalAlignment="Top" Width="251" SelectionChanged="ListView_SelectionChanged">
+            <ListView ItemsSource="{Binding customer}" HorizontalAlignment="Left" Height="358" Margin="10,33,0,0" Grid.Row="1" VerticalAlignment="Top" Width="251" SelectedItem="{Binding ClientSelectioner}" >
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>
@@ -44,9 +44,9 @@
             <TextBox HorizontalAlignment="Left" Height="21" Margin="355,64,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="397" Text="{Binding NouveauClient.Address}"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="355,94,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Text="{Binding NouveauClient.City}"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="632,94,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding NouveauClient.Province}"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="376,125,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged" Text="{Binding NouveauClient.PostalCode}"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="370,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" TextChanged="TextBox_TextChanged" Text="{Binding NouveauClient.ContactInfo}"/>
-            <Button Content="Supprimer ce client" HorizontalAlignment="Left" Margin="567,205,0,0" Grid.Row="1" VerticalAlignment="Top" Width="215"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="376,125,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Text="{Binding NouveauClient.PostalCode}"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="370,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"  Text="{Binding NouveauClient.ContactInfo}"/>
+            <Button Content="Supprimer ce client" HorizontalAlignment="Left" Margin="567,205,0,0" Grid.Row="1" VerticalAlignment="Top" Width="215" Click="Button_Click_1"/>
             <Image HorizontalAlignment="Left" Height="186" Margin="301,205,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222" Source="pack://siteoforigin:,,,/Resources/image.png"/>
 
         </Grid>

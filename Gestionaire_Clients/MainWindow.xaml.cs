@@ -25,6 +25,8 @@ namespace Gestionaire_Clients
     {
         List<Customer> customer = new List<Customer>();
         Customer NouveauClient = new Customer();
+        private Customer ClientSelectioner = new Customer();
+
 
 
         public MainWindow()
@@ -66,9 +68,10 @@ namespace Gestionaire_Clients
             customer.Add(NouveauClient);
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            customer.RemoveAt(1);
         }
     }
 
