@@ -13,6 +13,8 @@ namespace Gestionaire_Clients
 
         public string PicturePath { get; set; }
 
+        public string ContactInfo { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private string Info;
     }
